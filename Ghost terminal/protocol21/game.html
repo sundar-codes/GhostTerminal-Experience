@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindTrap v3.0 - Protocol 21</title>
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    <div class="crt-overlay"></div>
+    
+    <div id="terminal-container">
+        <div class="terminal-header">
+            <span class="glitch-title" data-text="SYSTEM.MIND_TRAP">SYSTEM.MIND_TRAP</span>
+            <span class="status">● ONLINE</span>
+        </div>
+        
+        <div id="content-area">
+            <div id="text-output" class="typewriter-text"></div>
+            
+            <div id="node-display" class="hidden">
+                </div>
+        </div>
+
+        <div class="controls" id="controls">
+            <button id="start-btn" class="cyber-btn hidden">INITIALIZE</button>
+            <div id="game-btns" class="hidden">
+                <button class="cyber-btn num-btn" data-val="1">EXTRACT 1</button>
+                <button class="cyber-btn num-btn" data-val="2">EXTRACT 2</button>
+                <button class="cyber-btn num-btn" data-val="3">EXTRACT 3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

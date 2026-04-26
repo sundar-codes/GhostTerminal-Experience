@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GhostTerminal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+  <img id="bg-logo" src="./skull img.png" alt="Ghost Logo" aria-hidden="true">
+
+  <main id="terminal" aria-label="GhostTerminal fake hacker simulator">
+    <section id="output" aria-live="polite"></section>
+
+    <form id="commandForm" autocomplete="off">
+      <label id="prompt" class="prompt" for="commandInput">root@ghost:~$</label>
+      <span id="typedText" aria-hidden="true"></span>
+      <input type="text" id="commandInput" spellcheck="false" autofocus aria-label="Command input">
+      <span id="cursor" aria-hidden="true">█</span>
+    </form>
+  </main>
+
+  <div id="window-layer"></div>
+
+  <div id="arcynBackdoor" class="hidden">
+    <button id="closeArcyn">[ SHUTDOWN UPLINK ]</button>
+    <iframe id="arcynFrame" src="https://en.wikipedia.org/wiki/Cyberpunk" title="Project Arcyn"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
