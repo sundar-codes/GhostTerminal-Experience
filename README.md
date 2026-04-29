@@ -4,9 +4,7 @@ A cyberpunk-inspired interactive terminal that simulates a hacking OS with hidde
 > "You are not using the system… the system is using you."
 
 ---
-<p align="center">
-  <a href="https://sundar-codes.github.io/reflexzero-ronin/"><strong>🕹️ check the Live Demo Here</strong></a>
-</p>
+
 
 
 ## 🧠 Overview
